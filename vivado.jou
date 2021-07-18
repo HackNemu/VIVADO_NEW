@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul 19 05:59:43 2021
+# Process ID: 13440
+# Current directory: D:/vivado_work/COUNT_60
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11388 D:\vivado_work\COUNT_60\COUNT_60.xpr
+# Log file: D:/vivado_work/COUNT_60/vivado.log
+# Journal file: D:/vivado_work/COUNT_60\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_work/COUNT_60/COUNT_60.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/vivado_work/COUNT_60/CNT60_ALL.v] -no_script -reset -force -quiet
+remove_files  D:/vivado_work/COUNT_60/CNT60_ALL.v
+add_files -norecurse D:/vivado_work/COUNT_60/CLOCK_24.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source TEST_CNT60_ALL.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+source TEST_CNT60_ALL.tcl
+run all
